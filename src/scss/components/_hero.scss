@@ -1,0 +1,32 @@
+.hero {
+  padding-top: 250px;
+  min-height: 800px;
+  background-color: var(--dark-color);
+  // .hero__container
+  &__container {
+    display: flex;
+  }
+  // .hero__content
+  &__content {
+    max-width: 530px;
+    color: var(--light-color);
+  }
+  // .hero__title
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+  // .hero__descr
+  &__descr {
+    margin: 0 0 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+  }
+  // .hero__link
+  &__link {
+  }
+}

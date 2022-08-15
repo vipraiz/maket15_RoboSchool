@@ -1,0 +1,39 @@
+.about {
+  // .about__descr
+  &__descr {
+    margin: 0 0 60px;
+    max-width: 900px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 160%;
+    color: var(--dark-color);
+
+    span {
+      font-weight: 600;
+    }
+  }
+  // .about__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+  // .about__item
+  &__item {
+    grid-column: 3 span;
+  }
+  // .about__number
+  &__number {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 160%;
+    color: var(--accent-color);
+  }
+  // .about__text
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+}

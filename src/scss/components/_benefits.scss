@@ -1,0 +1,35 @@
+.benefits {
+  background-color: #f9f9f9;
+  // .benefits__title
+  &__title {
+  }
+  // .benefits__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+}
+
+.benefits-item {
+  grid-column: 4 span;
+
+  &__title-tooltip {
+    display: flex;
+  }
+  // .benefits-item__title
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+  // .benefits-item__text
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+}

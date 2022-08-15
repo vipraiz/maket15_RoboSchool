@@ -1,0 +1,55 @@
+.treners {
+  // .treners__title
+  &__title {
+  }
+  // .treners__wrapper
+  &__wrapper {
+    padding-left: max(
+      var(--container-offset),
+      calc((100% - var(--container-width)) / 2)
+    );
+  }
+  // .treners__content
+  &__content {
+  }
+  // .treners__item
+  &__item {
+  }
+  // .treners__image
+  &__image {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-height: 500px;
+  }
+  // .treners__name
+  &__name {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+  // .treners__post
+  &__post {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+  // .treners__btn
+  &__btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--accent-color);
+  }
+
+  .swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    width: 360px;
+  }
+}
