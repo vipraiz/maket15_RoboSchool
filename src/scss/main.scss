@@ -5,6 +5,7 @@
 @import "settings";
 
 // подключения компонентов страницы
+@import "./components/burger";
 @import "./components/tooltip";
 @import "./components/section-title";
 @import "./components/btn";
@@ -14,4 +15,7 @@
 @import "./components/hero";
 @import "./components/about";
 @import "./components/benefits";
-@import "./components/treners";
+@import "./components/trainers";
+@import "./components/tariffs";
+@import "./components/order";
+@import "./components/footer";

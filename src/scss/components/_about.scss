@@ -11,16 +11,29 @@
     span {
       font-weight: 600;
     }
+
+    @media (max-width: 530px) {
+      font-size: 20px;
+    }
   }
   // .about__list
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @media (max-width: 530px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
   // .about__item
   &__item {
     grid-column: 3 span;
+
+    @include high-desktop {
+      text-align: center;
+      grid-column: 6 span;
+    }
   }
   // .about__number
   &__number {
@@ -28,6 +41,10 @@
     font-size: 70px;
     line-height: 160%;
     color: var(--accent-color);
+
+    @media (max-width: 530px) {
+      font-size: 60px;
+    }
   }
   // .about__text
   &__text {
@@ -35,5 +52,9 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--text-color);
+
+    @media (max-width: 530px) {
+      font-size: 16px;
+    }
   }
 }

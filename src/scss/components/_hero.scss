@@ -1,15 +1,26 @@
 .hero {
-  padding-top: 250px;
+  display: flex;
+  align-items: end;
+  padding-top: 160px;
   min-height: 800px;
   background-color: var(--dark-color);
   // .hero__container
   &__container {
     display: flex;
+    align-items: center;
   }
   // .hero__content
   &__content {
     max-width: 530px;
     color: var(--light-color);
+
+    @include high-tablet {
+      max-width: none;
+    }
+
+    @media (max-width: 530px) {
+      text-align: center;
+    }
   }
   // .hero__title
   &__title {
@@ -18,6 +29,14 @@
     font-size: 70px;
     line-height: 160%;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
   }
   // .hero__descr
   &__descr {
@@ -25,8 +44,29 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 160%;
+
+    @media (max-width: 530px) {
+      font-size: 16px;
+    }
   }
   // .hero__link
   &__link {
+  }
+
+  // .hero__image
+  &__image {
+    transform: translateX(167px);
+    picture {
+      display: flex;
+    }
+
+    @include high-tablet {
+      display: none;
+    }
+  }
+
+  @include high-tablet {
+    min-height: auto;
+    padding-bottom: 60px;
   }
 }

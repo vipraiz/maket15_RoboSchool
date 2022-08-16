@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 25px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  min-width: 260px;
+  line-height: 160%;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+
+  &_dark {
+    background-color: var(--dark-color);
+  }
+}

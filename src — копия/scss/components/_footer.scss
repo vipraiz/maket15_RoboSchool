@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--dark-color);
+  // .footer__container
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  // .footer__left
+  &__left {
+  }
+
+  // .footer__logo
+  &__logo {
+    margin-bottom: 5px;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: calc(30px * 1.6);
+}

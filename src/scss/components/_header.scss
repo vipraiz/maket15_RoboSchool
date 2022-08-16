@@ -9,5 +9,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include high-tablet {
+      justify-content: initial;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__phone {
+    @include high-tablet {
+      margin: 0 10px 0 auto;
+      font-size: 0;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      background-image: url(../img/phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px 24px;
+    }
   }
 }

@@ -9,19 +9,34 @@
         height="48"
         alt="Логотип Robo.School"
     /></a>
-    <nav class="nav" title="Главное меню">
+    <nav class="nav" title="Главное меню" data-menu>
       <ul class="nav__list list-reset">
-        <li class="nav__item">
+        <li class="nav__item" data-menu-item>
           <a href="#about" class="nav__link" data-scroll>О школе</a>
         </li>
-        <li class="nav__item">
-          <a href="#treners" class="nav__link" data-scroll>Тренеры</a>
+        <li class="nav__item" data-menu-item>
+          <a href="#trainers" class="nav__link" data-scroll>Тренеры</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item" data-menu-item>
           <a href="#tariffs" class="nav__link" data-scroll>Стоимость</a>
         </li>
       </ul>
+      <button
+        class="btn-reset burger-close"
+        data-menu-close
+        aria-label="Закрыть меню"
+      ></button>
     </nav>
-    <a href="tel:+78000001122" class="phone">+7 800 000 11 22</a>
+    <a href="tel:+78000001122" class="phone header__phone">+7 800 000 11 22</a>
+    <button
+      class="burger btn-reset"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>

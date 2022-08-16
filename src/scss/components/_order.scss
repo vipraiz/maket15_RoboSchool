@@ -1,0 +1,114 @@
+.order {
+  position: relative;
+  padding: 87px 0;
+  background-color: var(--accent-color);
+
+  @media (min-width: 769px) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background-image: url(../img/percent.svg);
+    }
+  }
+
+  // .order__container
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  // .order__left
+  &__left {
+    z-index: 1;
+    grid-column: 5 span;
+    color: var(--light-color);
+
+    @media (min-width: 918px) {
+      padding-left: 60px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      grid-column: 12 span;
+    }
+  }
+  // .order__title
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+  }
+  // .order__descr
+  &__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  // .order__right
+  &__right {
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    grid-column: 7 span;
+
+    @media (min-width: 918px) {
+      padding-right: 60px;
+    }
+
+    @media (max-width: 768px) {
+      grid-column: 12 span;
+      justify-content: center;
+    }
+  }
+  // .order__form
+  &__form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  // .form__label
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .just-validate-error-label {
+    color: var(--light-color) !important;
+    margin-bottom: 3px;
+  }
+  // .form__input
+  &__input {
+    padding: 20px;
+    border-radius: 5px;
+    height: 64px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--dark-color);
+
+    &::placeholder {
+      color: rgba(40, 41, 68, 0.7);
+    }
+  }
+  // .form__btn
+  &__btn {
+    padding: 19px 30px;
+  }
+}

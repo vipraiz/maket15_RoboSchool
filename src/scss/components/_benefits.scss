@@ -2,20 +2,40 @@
   background-color: #f9f9f9;
   // .benefits__title
   &__title {
+    @media (max-width: 530px) {
+      text-align: center;
+    }
   }
   // .benefits__list
   &__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @media (max-width: 530px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }
 
 .benefits-item {
   grid-column: 4 span;
 
+  @include high-desktop {
+    grid-column: 6 span;
+  }
+
+  @media (max-width: 530px) {
+    text-align: center;
+    grid-column: 6 span;
+  }
+
   &__title-tooltip {
     display: flex;
+    @media (max-width: 530px) {
+      justify-content: center;
+      margin-right: -34px;
+    }
   }
   // .benefits-item__title
   &__title {

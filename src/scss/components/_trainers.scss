@@ -1,0 +1,136 @@
+.trainers {
+  // .trainers__title
+  &__title {
+  }
+  // .trainers__wrapper
+  &__wrapper {
+    padding-left: max(
+      var(--container-offset),
+      calc((100% - var(--content-width)) / 2)
+    );
+  }
+  // .trainers__content
+  &__content {
+    margin-bottom: 75px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 530px) {
+      margin-bottom: 30px;
+    }
+  }
+  // .trainers__item
+  &__item {
+  }
+  // .trainers__image
+  &__image {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-height: 500px;
+
+    @media (max-width: 530px) {
+      max-height: 306px;
+    }
+  }
+  // .trainers__name
+  &__name {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+
+    @media (max-width: 530px) {
+      font-size: 20px;
+    }
+  }
+  // .trainers__post
+  &__post {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+
+    @media (max-width: 530px) {
+      font-size: 14px;
+    }
+  }
+  // .trainers__btn
+  &__btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--accent-color);
+
+    @media (max-width: 530px) {
+      font-size: 16px;
+    }
+  }
+
+  // .trainers__nav
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // .trainers__scroll
+  &__scroll {
+    width: 360px;
+    height: 5px;
+    background-color: rgba(20, 16, 36, 0.08);
+    border-radius: 40px;
+
+    @media (max-width: 530px) {
+      width: 100%;
+    }
+  }
+  // .trainers__btns
+  &__btns {
+    display: flex;
+
+    @media (max-width: 530px) {
+      display: none;
+    }
+  }
+
+  &__slider-btn {
+    width: 34px;
+    height: 34px;
+
+    &_prev {
+      margin-right: 15px;
+    }
+
+    &_next {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    width: 360px;
+
+    @media (max-width: 530px) {
+      width: 220px;
+    }
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: var(--dark-color);
+  }
+}
